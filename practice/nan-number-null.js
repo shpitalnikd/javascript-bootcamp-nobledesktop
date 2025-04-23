@@ -1,6 +1,6 @@
 const student_1 = "Martha";
 
-const studnet_2 = "David";
+const student_2 = "David";
 
 const student_3 = "Rebekah";
 
@@ -43,7 +43,7 @@ const money_in_my_wallet = 20;
 
 const amount = money_in_left_pocket * money_in_my_wallet;
 
-console.log(amount);
+//console.log(amount);
 
 // Number() < --- Number function (machine) performs something / a process ( Air fryer , Blender , Mircowave, Dishwasher, Dryer, Air Conditioner )
 
@@ -51,4 +51,39 @@ function Blender(fruit, water, sweenter) {
   return fruit + water + sweenter;
 }
 
-console.log(Blender("strawberry", "h20", "Honey"));
+//console.log(Blender("strawberry", "h20", "Honey"));
+
+// console.log(Math.pow(7, 3));
+const one = Math.ceil(0.9);
+// console.log(one + Math.pow(7, 3));
+
+console.log(Math.floor(Math.random() * 1500));
+
+const str1 = "Hi I am a String";
+const str2 = "I am a string as well";
+// back tic are a bit different
+const port = 8080;
+const str3 = `Hey I am running on Port:${port}`;
+
+console.log(str3);
+let petName = "Fluffy";
+let age = 3;
+let food = "tuna";
+let catGreeting = `Meow! My name is ${petName}. I am ${age} years old. My favorite food is ${food}`;
+
+console.log(catGreeting);
+// Meow! My name is Fluffy! I am 3 years old. My favorite food is tuna.
+
+console.log(4 % 2);
+console.log(5 % 3);
+// condition
+
+const num = 6;
+
+if (num % 2 === 1) {
+  // go inside these curl braces
+  console.log("Not Even");
+} else {
+  console.log("Not Odd");
+  // go here is condition is false
+}
