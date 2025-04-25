@@ -75,73 +75,115 @@
 
     // On your own:
     x = 10;
-    y;
+    y = -20;
 
     // y = ?;
     console.log(x + y); // -10
 
     // y = ?;
+    y = 20
     console.log(x - y); // -10
 
     // y = ?;
+    y = .25
     console.log(x * y); // 2.5
 
     // y = ?;
+    y = 4
     console.log(x / y); // 2.5
 
     // y = ?;
+    y = 5
     console.log(x ** y); // 100000
 
     // y = ?;
+    y = 3
     console.log(x % y); // 1
 
     // 2. Calculate the total cost, as shown in the comment:
     let unitCost = 50;
     let numUnits = 12;
     let shipping = 25;
-    let totalCost;
+    let totalCost= ( unitCost * numUnits) + shipping;
     console.log(totalCost); // 625
 
     // 3. Calculate the values of z in terms of w, x and y to get the value shown in the comment:
     let w = 10;
     x = 12;
     y = 15;
-    let z;
+    let z = x * y + w ;
     console.log(z); // 190
+    z = w * x - y
     console.log(z); // 105
+    z = x * y / w
     console.log(z); // 18
+    z = w * x / y 
     console.log(z); // 8
+    z = x - y + w 
     console.log(z); // 7
 
-    // 4. Use the Math Object to generate a random integer between 10-19;
-
+    // 4. Use the Math Object to generate a random integer between 0-19;
+    console.log(Math.floor(Math.random() * 20))
     // 5. Use the Math Object to generate a random integer between 26-50;
-
+    console.log(Math.floor(Math.random()*25 + 25))    
     // 6. Use the Math Object to get the maximum value from these numbers: 3, 5, 21, 7, 1, 3, 12, 6
-
+    console.log(Math.max(3, 5, 21, 7, 1, 3, 12, 6))    
     // 7. Use the Math Object to get the square root of 81.
-
+    console.log(Math.sqrt(81))    
     // 8. Use a Math Object method that takes 9.9999 as its argument and returns 9.
-
+    console.log(Math.floor(9.99))    
     // 9. Supply values for x, y and expon so that the console.log output matches the comment next to it:
 
-    x;
-    y;
-    let expon;
+    x = 14;
+    y = 2;
+    let expon  = Math.pow(x,y);
     console.log(expon); // 196
 
     // 10. The area of a circle equals PI times the radius squared: A = π r². 
     // Given a circle of radius 4, use the Math Object to find the area of the circle.
-
+        let area = Math.PI * Math.pow(4,2)
+        console.log(area)
     // 11. The hypotenuse (c) of a right triangle is obtained by the formula: a²+b²=c², where a and b are the other two sides. 
     // Using the Math Object, find the hypotenuse of a triangle, where a=5 and b=12.
-
+        let hypotenuse = Math.sqrt(Math.pow(5,2) + Math.pow(12,2))
+        console.log(hypotenuse)
     // 12. Generate two random floats, r1 and r2, in the 0-10 range. Round each of them off to 5 decimal places. Add them together.
+        
+        let r1 = Math.random()*10
+        let r2 = Math.random()*10
+
+        // round to 3rd decimal point 
+
+        r1 = r1.toFixed(3)
+        r2 = r2.toFixed(3)
+        console.log("r1", r1, "r2", r2)
+
+        let sum = Number(r1) + Number(r2)
+        console.log(sum)
 
     // HINTS: You cannot do addition with strings. 
     // Use the Number() method to convert strings to numbers.
 
     // 13. Given this baseball player and his statistics: 
+    let AB = 604;
+    let H = 188;
+    let _2B = 29;
+    let _3B = 1;
+    let HR = 48;
+
+    // TB = H + 2B + (3B _ 2) + (HR _ 3)
+    let TB = H + _2B + ( _3B * 2 ) + ( HR * 3 )
+    console.log(TB)
+
+
+    let SLG = TB / AB
+    console.log(SLG)
+    
+    //Round 
+
+    SLG = SLG.toFixed(3)
+    console.log(SLG)
+
 
     /*
 

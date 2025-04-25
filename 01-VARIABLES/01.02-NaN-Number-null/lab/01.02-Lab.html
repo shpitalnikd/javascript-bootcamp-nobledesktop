@@ -71,24 +71,27 @@ var flavor = 'vanilla';
 console.log(flavor, typeof(flavor));
 
 // on your own:
-var msg; 
-console.log('?'); // Hello World! string
+var msg = "Hello World!"; 
+console.log(msg, typeof msg); // Hello World! string
 
-var total; 
-console.log('?'); // 314 number
+var total = 314; 
+console.log(total, typeof total); // 314 number
 
-var isFresh; 
-console.log('?'); // true boolean
+var isFresh = true; 
+console.log(isFresh, typeof isFresh); // true boolean
 
-var price; 
-console.log('?'); // price: $ 29.95 number
+var price = 29.95; 
+console.log(price, typeof price); // price: 29.95 number
 
-var player1; 
-console.log('?'); // player1: undefined 'undefined'
+var player1 = undefined; 
+console.log(player1, typeof player1); // player1: undefined 'undefined'
+
+
+// Please pay your bill with a discount 
 
 var restaurantBill = 80;
 var groupon = '$10';
-var pleasePay;
+var pleasePay = restaurantBill - groupon
 console.log(pleasePay); // NaN 'number'
 
 // Use the Number() method, as needed, to get the expected values:
@@ -108,42 +111,46 @@ console.log(z); // 330
 // on your own:
 var x = '55';
 var y = '33';
-var z;
+var z = Number(x) -  Number(y);
 console.log(z); // expected: 22
 
 var x = 55;
 var y = '33';
-var z;
+var z = x + Number(y);
 console.log(z); // expected: 88
 
 var x = '55';
 var y = 5;
-var z;
+var z = Number(x)/y;
 console.log(z); // expected: 11
 
 var x = 55;
 var y = '44';
-var z;
+var z = x + y;
 console.log(z); // expected: 5544
 
 // message 1: Sally lives in New York City.
-let msg1;
-let name;
-let city;
+
+let name = "Sally";
+let city = "New York City";
+let msg1 = `${name} lives in ${city}`;
 console.log(msg1);
 
 // message 2: Freddy went to France for 6 months.
-let msg2;
-let fName;
-let country;
-let months;
+
+let fName = "Freddy" ;
+let country= "France";
+let months = 6;
+let msg2 = fName + " "  +"went to"+ " " + country +" "+ "for" + " " + months +" "+"months" ;
+
 console.log(msg2);
 
 // message 3: My Bunny had a baby carrot for breakfast.
-let msg3;
-let pet;
-let veg;
-let meal;
+
+let pet = "Bunny";
+let veg = "carrot";
+let meal ="breakfast" ;
+let msg3 = "My "+pet + " had a baby "+veg+ " for "+meal;
 console.log(msg3);
 
 /* ********** END 01.02 LAB ************** */
