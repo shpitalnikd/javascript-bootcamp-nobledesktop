@@ -53,6 +53,10 @@
         msg = 'pears b4 plums';
     }
 
+
+    // Ternary
+    msg = ('plums' < 'pears') ? 'plums b4 pears' : 'pears b4 plums';
+
     console.log(msg);
 
     // 2. Convert the following if-else into a ternary:
@@ -67,6 +71,9 @@
         z = y / x;
     }
 
+    // Ternary
+    z = (x <= y) ? (x / y) : (y / x);
+
     console.log(z);
 
     // 3. Convert the following ternary into if-else:
@@ -75,6 +82,12 @@
 
     n == 8 ? console.log("equal") : console.log("not equal");
 
+    // If-else
+    if (n == 8) {
+        console.log("equal");
+    } else {
+        console.log("not equal");
+    }
 
     // switch case break
     /*
@@ -144,7 +157,30 @@
     } else {
         continent = "Australia";
     }
-    
+
+    // Switch-case-break
+
+    switch (country) {
+        case "Canada":
+            continent = "North America";
+            break;
+        case "China":
+            continent = "Asia";
+            break;
+        case "Ghana":
+            continent = "Africa";
+            break;
+        case "Bolivia":
+            continent = "South America";
+            break;
+        case "France":
+            continent = "Europe";
+            break;
+        default:
+            continent = "Australia";
+            break;
+    }
+    console.log(continent);
 //  END 02.03 LAB
 
 //  SEE: 02.03 LAB SOLUTION 

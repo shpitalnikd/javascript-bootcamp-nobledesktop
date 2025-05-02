@@ -57,8 +57,14 @@
         greeting += "Morning!";
     } else if(hr < 18) {
         greeting += " Afternoon!";
-    } else {
+    } else if(hr < 20) {
         greeting += 'Evening!';
+    } else if(hr < 2) {
+        greeting += "Evening!";
+    } else if(hr < 4) {
+        greeting += "Hey, Night Owl!";
+    } else {
+        greeting += "Evening!";
     }
 
     console.log(greeting);
@@ -69,6 +75,34 @@
 // - When **hr = 6**, output should be  "Good Morning!";
 // - When **hr = 15**, output should be  "Good Afternoon!";
 // - When **hr = 20**, output should be  "Good Evening!";
+
+    function testGreeting(hr) {
+        let greeting = 'Good ';
+        if(hr < 2) {
+            greeting += "Evening!";
+        }
+        else if(hr < 4) {
+            greeting += "Hey, Night Owl!";
+        } else if(hr < 12) {
+            greeting += "Morning!";
+        } else if(hr < 18) {
+            greeting += " Afternoon!";
+        } else if(hr < 20) {
+            greeting += 'Evening!';
+        }  else {
+            greeting += "Evening!";
+        }
+    
+        console.log(greeting);
+    }
+    
+    testGreeting(1); // Good Evening!
+    testGreeting(3); // Hey, Night Owl!
+    testGreeting(6); // Good Morning!
+    testGreeting(15); // Good Afternoon! 
+    testGreeting(20); // Good Evening!   
+
+
 
 //  END 02.04 LAB
 

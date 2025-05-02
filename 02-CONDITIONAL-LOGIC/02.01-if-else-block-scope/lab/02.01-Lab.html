@@ -59,19 +59,48 @@
     1. Declare a variable called lucyIsOnline and set its value to false. Write an if-else statement: 
         - if lucyIsOnline is true, console.log "Lucy is online",
         - if lucyIsOnline is false, console.log "Lucy is not online"
+    
+    */
+   const lucyIsOnline = false
+   if(lucyIsOnline){
 
+             console.log("Lucy is online !") 
+
+   }else{
+
+             console.log("Lucy is offline")
+   }
+    /*    
     2. Declare a variable price, and set it equal to 88. Write an if-else statement:
 
         - if price is greater than or equal to 100, console.log 'Expensive'
         - if price is less than 100, console.log 'Cheap'
+    */
 
+    const price = 88
+
+    if(price >= 100){
+        console.log('Expensive')
+    }else{
+        console.log("Cheap")
+    }
+    /*  
     3. Add an "else if" clause to the statement:
 
         - if price is greater than 100, console.log 'Expensive'
         - if price is between 50-99, console.log 'Reasonable'
         - if price is less than 50, console.log 'Cheap'
+    */
+    if(price > 100){
+        console.log('Expensive')
+    }else if(price >= 50 && price <= 99){
+        console.log("Reasonable")
+    }else{
+        console.log("Cheap")
+    }
 
-    4. Declare two variables: stars and review. Set stars equal to 4 and review equal to an empty string. Write an if else-else if-else statemetn:
+    /*  
+    4. Declare two variables: stars and review. Set stars equal to 4 and review equal to an empty string. Write an if else-else if-else statement:
 
         - if 5 stars, review is "Great"
         - if 4 stars, review is "Good"
@@ -79,22 +108,48 @@
         - if 2 stars, review is "Bad"
         - if 1 star, review is "Awful"
         - console.log review below the whole thing
+    */
+   
+   const star = 4 
+   let review = ''
+
+   if(star === 5){
+    review = "Great"
+   }else if(star === 4){
+    review = "Good"
+   }else if(star === 3){
+    review = "Meh"
+   }else if(star === 2){
+    review = "Bad"
+   }else{
+     review = "Awful"
+   }
+   console.log(review)
+    /*
 
     5. Debug the following: 
-    
+    */
         let animal = 'cow';
         let sound = '';
 
-        if (animal = 'dog') {
-            sound = Woof;
-        } elseif (animal = 'cat') {
-        sound = Meow;
-        } elseif (animal = 'cow') {
-            sound = Moo;
-        } else (Animal and sound both unknown) {
-        console.log('sound + !');
-    
+        //  === is different than =
+        //  = is an assignment operator
+        //  == is a comparison operator
+        //  === is a comparison operator
+
+        if (animal === 'dog') {
+            sound = "Woof";
+        } else if (animal === 'cat') {
+        sound = "Meow";
+        } else if (animal === 'cow') {
+            sound = "Moo";
+        } else {
+        console.log("Animal and sound both unknown ")
+        }
+        console.log(sound + "!");
         // desired output: Moo!
+
+    /*    
     */
 
     // 6. Given these variables, write an if-else with three "else if" blocks to evaluate multiple temperature ranges:
@@ -107,6 +162,18 @@
     - 32-49 is cold
     - below 32 is freezing
     */
+    if(fahrenheit > 90){
+        weather = "hot"
+    }else if(fahrenheit >= 70 && fahrenheit <= 89){
+        weather = "warm"                                    
+    }else if(fahrenheit >= 50 && fahrenheit <= 69){
+        weather = "cool"
+    }else if(fahrenheit >= 32 && fahrenheit <= 49){
+        weather = "cold"
+    }else{
+        weather = "freezing"
+    }
+    console.log(weather)
 
 // END LAB 02.01
 
