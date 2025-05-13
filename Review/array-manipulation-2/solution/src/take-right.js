@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /* exported takeRight */
 function takeRight(array, count) {
   const taken = [];
@@ -8,3 +8,5 @@ function takeRight(array, count) {
   }
   return taken;
 }
+
+// [ 1, 2, 3]
