@@ -41,12 +41,12 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   truncate(8, 'All Code All Day'); // -> "All Code..."
-   truncate(15, 'HTML, CSS, JavaScript, React'); // -> "HTML, CSS, Java..."
-   truncate(1, 'React'); // -> "R..."
-   truncate(3, 'Angular'); // -> "Ang..."
-   truncate(5, ''); // -> "..."
-   truncate(20, 'LearningFuze'); // -> "LearningFuze..."
+   truncate(8, "All Code All Day"); // -> "All Code..."
+   truncate(15, "HTML, CSS, JavaScript, React"); // -> "HTML, CSS, Java..."
+   truncate(1, "React"); // -> "R..."
+   truncate(3, "Angular"); // -> "Ang..."
+   truncate(5, ""); // -> "..."
+   truncate(20, "LearningFuze"); // -> "LearningFuze..."
    ```
 
 1. ### `capitalizeWord(word)`
@@ -62,13 +62,13 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   capitalizeWord('broKeN'); // -> "Broken"
-   capitalizeWord('sEarCHinG'); // -> "Searching"
-   capitalizeWord('quEStiOn'); // -> "Question"
-   capitalizeWord('tHoUghTfUl'); // -> "Thoughtful"
-   capitalizeWord('jaVAsCrIPt'); // -> "JavaScript"
-   capitalizeWord('javaScript'); // -> "JavaScript"
-   capitalizeWord('JavascRipt'); // -> "JavaScript"
+   capitalizeWord("broKeN"); // -> "Broken"
+   capitalizeWord("sEarCHinG"); // -> "Searching"
+   capitalizeWord("quEStiOn"); // -> "Question"
+   capitalizeWord("tHoUghTfUl"); // -> "Thoughtful"
+   capitalizeWord("jaVAsCrIPt"); // -> "JavaScript"
+   capitalizeWord("javaScript"); // -> "JavaScript"
+   capitalizeWord("JavascRipt"); // -> "JavaScript"
    ```
 
 1. ### `ransomCase(string)`
@@ -84,11 +84,11 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   ransomCase('foo'); // -> "fOo"
-   ransomCase('QUUX'); // -> "qUuX"
-   ransomCase('WaldO'); // -> "wAlDo"
-   ransomCase('JavaScript'); // -> "jAvAsCrIpT"
-   ransomCase('LearningFuze'); // -> "lEaRnInGfUzE"
+   ransomCase("foo"); // -> "fOo"
+   ransomCase("QUUX"); // -> "qUuX"
+   ransomCase("WaldO"); // -> "wAlDo"
+   ransomCase("JavaScript"); // -> "jAvAsCrIpT"
+   ransomCase("LearningFuze"); // -> "lEaRnInGfUzE"
    ```
 
 1. ### `capitalizeWords(string)`
@@ -104,13 +104,13 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   capitalizeWords('needs solution');
+   capitalizeWords("needs solution");
    // -> "Needs Solution"
-   capitalizeWords('Add string manipulation practice.');
+   capitalizeWords("Add string manipulation practice.");
    // -> "Add String Manipulation Practice."
-   capitalizeWords('aLl CoDe aLl DaY');
+   capitalizeWords("aLl CoDe aLl DaY");
    // -> "All Code All Day"
-   capitalizeWords('HTML, CSS, JavaScript, PHP, SQL');
+   capitalizeWords("HTML, CSS, JavaScript, PHP, SQL");
    // -> "Html, Css, Javascript, Php, Sql"
    ```
 
@@ -127,12 +127,12 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   numVowels('All Code All Day'); // -> 5
-   numVowels('HTML, CSS, JavaScript, React'); // -> 5
-   numVowels('React'); // -> 2
-   numVowels('Angular'); // -> 3
-   numVowels(''); // -> 0
-   numVowels('LearningFuze'); // -> 5
+   numVowels("All Code All Day"); // -> 5
+   numVowels("HTML, CSS, JavaScript, React"); // -> 5
+   numVowels("React"); // -> 2
+   numVowels("Angular"); // -> 3
+   numVowels(""); // -> 0
+   numVowels("LearningFuze"); // -> 5
    ```
 
 1. ### `firstChars(length, string)`
@@ -149,12 +149,12 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   firstChars(8, 'All Code All Day'); // -> "All Code"
-   firstChars(15, 'HTML, CSS, JavaScript, React'); // -> "HTML, CSS, Java"
-   firstChars(1, 'React'); // -> "R"
-   firstChars(3, 'Angular'); // -> "Ang"
-   firstChars(5, ''); // -> ""
-   firstChars(20, 'LearningFuze'); // -> "LearningFuze"
+   firstChars(8, "All Code All Day"); // -> "All Code"
+   firstChars(15, "HTML, CSS, JavaScript, React"); // -> "HTML, CSS, Java"
+   firstChars(1, "React"); // -> "R"
+   firstChars(3, "Angular"); // -> "Ang"
+   firstChars(5, ""); // -> ""
+   firstChars(20, "LearningFuze"); // -> "LearningFuze"
    ```
 
 1. ### `lastChars(length, string)`
@@ -171,12 +171,12 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   lastChars(8, 'All Code All Day'); // -> " All Day"
-   lastChars(15, 'HTML, CSS, JavaScript, React'); // -> "vaScript, React"
-   lastChars(1, 'React'); // -> "t"
-   lastChars(3, 'Angular'); // -> "lar"
-   lastChars(5, ''); // -> ""
-   lastChars(20, 'LearningFuze'); // -> "LearningFuze"
+   lastChars(8, "All Code All Day"); // -> " All Day"
+   lastChars(15, "HTML, CSS, JavaScript, React"); // -> "vaScript, React"
+   lastChars(1, "React"); // -> "t"
+   lastChars(3, "Angular"); // -> "lar"
+   lastChars(5, ""); // -> ""
+   lastChars(20, "LearningFuze"); // -> "LearningFuze"
    ```
 
 1. ### `swapChars(firstIndex, secondIndex, string)`
@@ -194,13 +194,9 @@ Then, following the specifications below, complete each of the functions defined
    #### Examples
 
    ```js
-   swapChars(0, 1, 'lodash'); // -> "oldash"
-   swapChars(0, 4, 'React'); // -> "teacR"
-   swapChars(6, 7, 'complete'); // -> "compleet"
-   swapChars(0, 8, 'LearningFuze'); // -> "FearningLuze"
-   swapChars(11, 23, 'HTML, CSS, JavaScript, React'); // -> "HTML, CSS, RavaScript, Jeact"
+   swapChars(0, 1, "lodash"); // -> "oldash"
+   swapChars(0, 4, "React"); // -> "teacR"
+   swapChars(6, 7, "complete"); // -> "compleet"
+   swapChars(0, 8, "LearningFuze"); // -> "FearningLuze"
+   swapChars(11, 23, "HTML, CSS, JavaScript, React"); // -> "HTML, CSS, RavaScript, Jeact"
    ```
-
-## Submitting Your Solution
-
-When your solution is complete, submit a Pull Request on GitHub. Detailed instructions can be found [**here**](../../guides/submitting-your-solution).
